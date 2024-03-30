@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #29303b;
+  background-color: #fff;
+  line-height: 1.43;
+}
+
+.myNavBar {
+  border-bottom: 1px solid #cacbcc;
+}
+.myNavBar .navbar-brand img {
+  height: 50px;
+  object-fit: cover;
+}
+.myNavBar .input_search {
+  flex-grow: 7;
+  align-self: center;
+}
+.myNavBar .input_search .form-control {
+  background-color: rgba(20, 23, 28, 0.05);
+  border: none;
+  transition: none;
+}
+.myNavBar .input_search .form-control:focus {
+  box-shadow: none;
+  background-color: #fff;
+  border-top: 1px solid #cacbcc;
+  border-bottom: 1px solid #cacbcc;
+  border-left: 1px solid #cacbcc;
+}
+.myNavBar .input_search .form-control:focus + .input-group-prepend .input-group-text {
+  color: #ec5252;
+  background-color: #fff;
+  border-top: 1px solid #cacbcc;
+  border-bottom: 1px solid #cacbcc;
+  border-right: 1px solid #cacbcc;
+}
+.myNavBar .input_search .form-control:focus + .input-group-prepend:hover .input-group-text {
+  color: #fff;
+  background-color: #ec5252;
+}
+.myNavBar .input_search .input-group-prepend .input-group-text {
+  background-color: rgba(20, 23, 28, 0.05);
+  color: #ec5252;
+  border: none;
+}
+.myNavBar .input_search .input-group-prepend:hover .input-group-text {
+  color: #fff;
+  background-color: #ec5252;
+}
+.myNavBar .navbar-nav {
+  justify-content: space-evenly;
+  width: 100%;
+}
+.myNavBar .navbar-nav .nav-item .nav-link {
+  color: #505763;
+  font-size: 13px;
+  padding: 10px 15px;
+}
+.myNavBar .navbar-nav .nav-item:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+.myNavBar .navbar-nav .nav-item:nth-child(3) {
+  border-radius: 50%;
+}
+.btn--white {
+  color: #686f7a;
+  background-color: #fff;
+  font-weight: 600;
+  border: 1px solid #505763;
+  transition: all 0.5s;
+}
+.btn--white:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.btn--red {
+  color: #fff;
+  background-color: #ec5252;
+  font-weight: 600;
+  border: 1px solid #ec5252;
+  transition: all 0.5s;
+}
+.btn--red:hover {
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */
