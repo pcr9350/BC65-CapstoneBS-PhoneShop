@@ -140,8 +140,8 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-id-badge"></i></span>
                 </div>
-                <input type="text" name="id" id="MaNV" class="form-control input-sm"
-                  placeholder="Mã nhân Viên được tạo tự động" readonly>
+                <input type="text" name="id" id="MaSP" class="form-control input-sm"
+                  placeholder="Mã sản phẩm được tạo tự động" readonly>
               </div>
 
               <span class="sp-thongbao" id="tbTKNV"></span>
@@ -151,10 +151,10 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-user"></i></span>
                 </div>
-                <input type="text" name="tk" id="tknv" class="form-control input-sm" placeholder="Tài khoản">
+                <input type="text" name="ten" id="tenSP" class="form-control input-sm" placeholder="Name">
               </div>
 
-              <span class="sp-thongbao" id="tbTKNV"></span>
+              <span class="sp-thongbao" id=""></span>
             </div>
 
             <div class="form-group">
@@ -162,9 +162,9 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-address-book"></i></span>
                 </div>
-                <input type="name" name="name" id="name" class="form-control input-sm" placeholder="Họ và tên">
+                <input type="text" name="gia" id="giaSP" class="form-control input-sm" placeholder="Giá tiền">
               </div>
-              <span class="sp-thongbao" id="tbTen"></span>
+              <span class="sp-thongbao" id=""></span>
             </div>
 
             <div class="form-group">
@@ -172,10 +172,10 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                 </div>
-                <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email">
+                <input type="text" name="manHinh" id="screenSP" class="form-control input-sm" placeholder="Screen">
               </div>
 
-              <span class="sp-thongbao" id="tbEmail"></span>
+              <span class="sp-thongbao" id=""></span>
             </div>
 
             <div class="form-group">
@@ -183,10 +183,10 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-key"></i></span>
                 </div>
-                <input type="password" name="password" id="password" class="form-control input-sm"
-                  placeholder="Mật khẩu">
+                <input type="text" name="camSau" id="backCameraSP" class="form-control input-sm"
+                  placeholder="Back camera">
               </div>
-              <span class="sp-thongbao" id="tbMatKhau"></span>
+              <span class="sp-thongbao" id=""></span>
             </div>
 
             <div class="form-group">
@@ -194,10 +194,11 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                 </div>
-                <input type="text" name="ngaylam" id="datepicker" class="form-control" placeholder="Ngày làm">
+                <input type="text" name="camTruoc" id="frontCameraSP" class="form-control input-sm"
+                  placeholder="Front camera">
               </div>
 
-              <span class="sp-thongbao" id="tbNgay"></span>
+              <span class="sp-thongbao" id=""></span>
             </div>
 
             <div class="form-group">
@@ -205,33 +206,34 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-money" aria-hidden="true"></i></span>
                 </div>
-                <input type="text" name="luongCB" id="luongCB" class="form-control input-sm" placeholder="Lương cơ bản">
+                <input name="img" id="imgSP" class="form-control input-sm" placeholder="Link image">
               </div>
-              <span class="sp-thongbao" id="tbLuongCB"></span>
+              <span class="sp-thongbao" id=""></span>
             </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-money" aria-hidden="true"></i></span>
+                </div>
+                <input type="text" name="mota" id="descriptionSP" class="form-control input-sm" placeholder="Description">
+              </div>
+              <span class="sp-thongbao" id=""></span>
+            </div>
+
             <div class="form-group">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
                 </div>
-                <select class="form-control" id="chucvu">
-                  <option>Chọn chức vụ</option>
-                  <option>Sếp</option>
-                  <option>Trưởng phòng</option>
-                  <option>Nhân viên</option>
+                <select class="form-control" id="typeSP">
+                  <option>Choose type option</option>
+                  <option>Iphone</option>
+                  <option>Samsung</option>
                 </select>
               </div>
 
               <span class="sp-thongbao" id="tbChucVu"></span>
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                </div>
-                <input type="text" name="gioLam" id="gioLam" class="form-control input-sm" placeholder="Giờ làm">
-              </div>
-              <span class="sp-thongbao" id="tbGiolam"></span>
             </div>
 
           </form>
@@ -239,8 +241,7 @@
 
         <!-- Modal footer -->
         <div class="modal-footer" id="modal-footer">
-          <button id="btnThemNV" type="button" class="btn btn-success" onclick="addNhanVien()">Thêm người
-            dùng</button>
+          <button id="btnThemSP" type="button" class="btn btn-success" onclick="addProduct()">Thêm sản phẩm</button>
           <button id="btnCapNhat" type="button" class="btn btn-warning" onclick="updateNhanVien()">Cập
             nhật</button>
           <button id="btnDong" type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
