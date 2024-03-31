@@ -13,6 +13,10 @@ body {
 
 .myNavBar {
   border-bottom: 1px solid #cacbcc;
+  margin: 0 auto;
+}
+.myNavBar .myNavBar__navbar {
+  margin-bottom: 0;
 }
 .myNavBar .navbar-brand img {
   height: 50px;

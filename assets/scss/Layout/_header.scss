@@ -1,5 +1,9 @@
 .myNavBar {
     border-bottom: 1px solid $color-gray-3;
+    margin: 0 auto;
+    .myNavBar__navbar {
+        margin-bottom: 0;
+    }
     .navbar-brand {
         img {
             height: 50px;

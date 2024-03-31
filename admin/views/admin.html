@@ -20,23 +20,24 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  
+  <!-- <div class="wrapper"> -->
     <!-- Sidebar Holder -->
 
 
     <!-- Page Content Holder -->
-    <div id="content">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    <!-- <div id="content"> -->
+      <!-- <nav class="navbar navbar-default">
+        <div class="container-fluid"> -->
 
-          <div class="navbar-header">
+          <!-- <div class="navbar-header">
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
               <i class="glyphicon glyphicon-align-left"></i>
               <span>Toggle Sidebar</span>
             </button>
-          </div>
+          </div> -->
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Page</a></li>
               <li><a href="#">Page</a></li>
@@ -45,8 +46,72 @@
             </ul>
           </div>
         </div>
-      </nav>
-
+      </nav> -->
+      <header class="container-fluid myNavBar">
+        <nav class="navbar navbar-expand-sm navbar-light myNavBar__navbar">
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6">
+            <div class="row">
+              <a class="navbar-brand" href="#">
+                <img src="../../assets/img/logo.png" alt="logo" />
+              </a>
+              
+              <div class="input_search">
+                <form action="">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search phone here"
+                    />
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-search"></i>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg- col-md-4 col-sm-4"
+            style="margin-top: -4px"
+          >
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item admin">
+                  <button class="btn btn--red mr-1">
+                    Admin
+                  </button>
+                </li>
+                <li class="nav-item customer">
+                  <button class="btn btn--red mr-1">
+                    Customer
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+    
+          <button
+            class="navbar-toggler d-lg-none col-sm-2"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </header>
 
       <div class="">
         <div class="card text-center">
@@ -111,8 +176,8 @@
         </div>
       </div>
 
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 
 
   <!-- The Modal -->
@@ -133,7 +198,7 @@
         <!-- Modal body -->
         <div class="modal-body" id="myModal">
 
-          <form role="form">
+          <form role="form" id="formQLSP">
 
             <div class="form-group">
               <div class="input-group">
@@ -154,7 +219,7 @@
                 <input type="text" name="ten" id="tenSP" class="form-control input-sm" placeholder="Name">
               </div>
 
-              <span class="sp-thongbao" id=""></span>
+              <span class="sp-thongbao" id="tbTenSP"></span>
             </div>
 
             <div class="form-group">
@@ -164,7 +229,7 @@
                 </div>
                 <input type="text" name="gia" id="giaSP" class="form-control input-sm" placeholder="Giá tiền">
               </div>
-              <span class="sp-thongbao" id=""></span>
+              <span class="sp-thongbao" id="tbGiaSP"></span>
             </div>
 
             <div class="form-group">
@@ -175,7 +240,7 @@
                 <input type="text" name="manHinh" id="screenSP" class="form-control input-sm" placeholder="Screen">
               </div>
 
-              <span class="sp-thongbao" id=""></span>
+              <span class="sp-thongbao" id="tbScreenSP"></span>
             </div>
 
             <div class="form-group">
@@ -186,7 +251,7 @@
                 <input type="text" name="camSau" id="backCameraSP" class="form-control input-sm"
                   placeholder="Back camera">
               </div>
-              <span class="sp-thongbao" id=""></span>
+              <span class="sp-thongbao" id="tbBackCameraSP"></span>
             </div>
 
             <div class="form-group">
@@ -198,7 +263,7 @@
                   placeholder="Front camera">
               </div>
 
-              <span class="sp-thongbao" id=""></span>
+              <span class="sp-thongbao" id="tbFrontCameraSP"></span>
             </div>
 
             <div class="form-group">
@@ -206,9 +271,9 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-money" aria-hidden="true"></i></span>
                 </div>
-                <input name="img" id="imgSP" class="form-control input-sm" placeholder="Link image">
+                <input name="img" id="imgSP" class="form-control input-sm" placeholder="Link image: https://xxxxxx.png||jpeg||jpg||gif">
               </div>
-              <span class="sp-thongbao" id=""></span>
+              <span class="sp-thongbao" id="tbImgSP"></span>
             </div>
 
             <div class="form-group">
@@ -218,7 +283,7 @@
                 </div>
                 <input type="text" name="mota" id="descriptionSP" class="form-control input-sm" placeholder="Description">
               </div>
-              <span class="sp-thongbao" id=""></span>
+              <span class="sp-thongbao" id="tbDescriptionSP"></span>
             </div>
 
             <div class="form-group">
@@ -227,13 +292,13 @@
                   <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
                 </div>
                 <select class="form-control" id="typeSP">
-                  <option>Choose type option</option>
-                  <option>Iphone</option>
-                  <option>Samsung</option>
+                  
+                  <option value="Iphone">Iphone</option>
+                  <option value="Samsung">Samsung</option>
                 </select>
               </div>
 
-              <span class="sp-thongbao" id="tbChucVu"></span>
+              <span class="sp-thongbao" id="tbTypeSP"></span>
             </div>
 
           </form>
@@ -268,9 +333,9 @@
   <script src="../models/products.js"></script>
   <script src="../services/productServ.js"></script>
   <script src="../controllers/controllerAdmin.js"></script>
+  <script src="../util/util.js"></script>
+  <script src="../util/validation.js"></script>
   <script src="../js/mainAdmin.js"></script>
   <script src="../../assets/js/main.js"></script>
 </body>
-
->>>>>>> main
 </html>
