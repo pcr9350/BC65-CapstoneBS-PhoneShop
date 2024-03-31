@@ -22,4 +22,19 @@ var productServ = {
             data: sp,
         })
     },
+
+    getProductById: function (id) {
+        return axios({
+            url: `${BASE_URL}/${id}`,
+            method: 'GET',
+        })
+    },
+
+    updateProductById: function (id, sp) {
+        return axios({
+            url: `${BASE_URL}/${id}`,
+            method: 'PUT',
+            data: sp,
+        })
+    }
 }
