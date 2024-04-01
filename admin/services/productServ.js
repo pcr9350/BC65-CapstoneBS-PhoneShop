@@ -36,5 +36,12 @@ var productServ = {
             method: 'PUT',
             data: sp,
         })
-    }
+    },
+
+    // searchProductByName: function (name) {
+    //     return axios({
+    //         url: `${BASE_URL}?search=${name}`,
+    //         method: 'GET',
+    //     });
+    // }    
 }

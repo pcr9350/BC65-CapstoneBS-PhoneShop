@@ -57,8 +57,8 @@
                 <h3 class="text-left text-primary font-weight-bold">Danh sách sản phẩm</h3>
               </div>
               <div class="col-md-6 text-right">
-                <button class="btn btn-primary" id="btnThem" data-toggle="modal" data-target="#myModal">Thêm sản
-                  phẩm</button>
+                <span class="btn btn-primary" id="btnThem" data-toggle="modal" data-target="#myModal">Thêm sản
+                  phẩm</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" id="searchName">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="btnTimNV"><i class="fa fa-search"></i></span>
+                    <button class="input-group-text" id="btnTimNV" onclick="searchProductByName()"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
