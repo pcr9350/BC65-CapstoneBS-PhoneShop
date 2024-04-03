@@ -7,5 +7,5 @@ function products(_id, _name, _price, _screen, _backCamera, _frontCamera, _img, 
     this.frontCamera = _frontCamera
     this.img = _img
     this.desc = _desc
-    this._type = _type
+    this.type = _type
 }

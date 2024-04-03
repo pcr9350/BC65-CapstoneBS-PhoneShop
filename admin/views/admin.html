@@ -122,8 +122,8 @@
                 <h3 class="text-left text-primary font-weight-bold">Danh sách sản phẩm</h3>
               </div>
               <div class="col-md-6 text-right">
-                <button class="btn btn-primary" id="btnThem" data-toggle="modal" data-target="#myModal">Thêm sản
-                  phẩm</button>
+                <span class="btn btn-primary" id="btnThem" data-toggle="modal" data-target="#myModal">Thêm sản
+                  phẩm</span>
               </div>
             </div>
           </div>
@@ -133,9 +133,9 @@
             <div class="row mb-3">
               <div class="col">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Loại nhân viên" id="searchName">
+                  <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" id="searchName">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="btnTimNV"><i class="fa fa-search"></i></span>
+                    <button class="input-group-text" id="btnTimNV" onclick="searchProductByName()"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -227,7 +227,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-address-book"></i></span>
                 </div>
-                <input type="text" name="gia" id="giaSP" class="form-control input-sm" placeholder="Giá tiền">
+                <input type="text" name="gia" id="giaSP" class="form-control input-sm" placeholder="Price">
               </div>
               <span class="sp-thongbao" id="tbGiaSP"></span>
             </div>
@@ -281,7 +281,8 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-money" aria-hidden="true"></i></span>
                 </div>
-                <input type="text" name="mota" id="descriptionSP" class="form-control input-sm" placeholder="Description">
+                <input type="text" name="mota" id="descriptionSP" class="form-control input-sm"
+                  placeholder="Description">
               </div>
               <span class="sp-thongbao" id="tbDescriptionSP"></span>
             </div>
@@ -307,7 +308,7 @@
         <!-- Modal footer -->
         <div class="modal-footer" id="modal-footer">
           <button id="btnThemSP" type="button" class="btn btn-success" onclick="addProduct()">Thêm sản phẩm</button>
-          <button id="btnCapNhat" type="button" class="btn btn-warning" onclick="updateNhanVien()">Cập
+          <button id="btnCapNhat" type="button" class="btn btn-warning" onclick="updateProduct()">Cập
             nhật</button>
           <button id="btnDong" type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
         </div>
