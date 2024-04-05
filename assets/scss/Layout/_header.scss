@@ -1,0 +1,88 @@
+.myNavBar {
+    border-bottom: 1px solid $color-gray-3;
+    margin: 0 auto;
+    .myNavBar__navbar {
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        img {
+            height: 50px;
+            object-fit: cover;
+        }
+        
+    }
+    .input_search {
+        flex-grow: 7;
+        align-self: center;
+        .form-control {
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+            &:focus {
+                box-shadow: none;
+                background-color: $color-white-0;
+                border-top: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+            }
+            &:focus + .input-group-prepend {
+                .input-group-text {
+                    color: $color-red-0;
+                    background-color: $color-white-0;
+                    border-top: 1px solid $color-gray-3;
+                    border-bottom: 1px solid $color-gray-3;
+                    border-right: 1px solid $color-gray-3;
+                }
+                &:hover {
+                    .input-group-text {
+                        color: $color-white-0;
+                        background-color: $color-red-0;
+                    }
+                }
+            }
+        }
+        .input-group-prepend {
+            .input-group-text {
+                background-color: $color-gray-1;
+                color: $color-red-0;
+                border: none;
+            }
+            &:hover {
+                .input-group-text {
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        justify-content: space-evenly;
+        width: 100%;
+        .nav-item {
+            .nav-link {
+                @include text($color-black-light, $fs-1, $fw-normal);
+                padding: $pd-1 $pd-2;
+            }
+            &:hover {
+                background-color: $color-gray-1;
+                
+            }
+        }
+        .nav-item:nth-child(3) {
+            border-radius: 50%;
+        }
+        
+    }
+    @include respond-to("extra-large") {
+        // .navbar-nav {
+        //     .business, .instructor {
+        //         display: none;
+        //     }
+        // }
+    }
+    @include respond-to("medium") {
+        // .input_search {
+        //     display: none;
+        // }
+    }
+}
