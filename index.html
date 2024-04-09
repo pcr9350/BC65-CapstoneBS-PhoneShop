@@ -1,112 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>PhoneShop</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart-user-and checkout/styleUser/styleUser.css">
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- FONT AWESOME  -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- MAIN CSS  -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-  <body>
-    <header class="container-fluid myNavBar">
-      <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6">
-          <div class="row">
-            <a class="navbar-brand" href="#">
-              <img src="./assets/img/logo.png" alt="logo" />
-            </a>
-            
-            <div class="input_search">
-              <form action="">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Search phone here"
-                  />
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="fa fa-search"></i>
-                    </span>
-                  </div>
-                </div>
-              </form>
+    <div class="container">
+        <header>
+            <h1>LIST PRODUCT</h1>
+            <div class="iconCart">
+                <img src="cart-user-and checkout/images/icon.png">
+                <div class="totalQuantity">0</div>
             </div>
-          </div>
+        </header>
+
+        <div class="listProduct">
+
+            <div class="item">
+                <img src="cart-user-and checkout/images/1.webp" alt="">
+                <h2>CoPilot / Black / Automatic</h2>
+                <div class="price">$550</div>
+                <button>Add To Cart</button>
+            </div>
+
         </div>
-        <div
-          class="col-xl-4 col-lg- col-md-4 col-sm-4"
-          style="margin-top: -4px"
-        >
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item admin">
-                <button class="btn btn--red mr-1">
-                  Admin
-                </button>
-              </li>
-              <li class="nav-item customer">
-                <button class="btn btn--red mr-1">
-                  Customer
-                </button>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fa fa-shopping-cart"></i
-                ></a>
-              </li>
-              
-            </ul>
-          </div>
+    </div>
+
+    <div class="cart">
+        <h2>
+            CART
+        </h2>
+
+        <div class="listCart">
+
+
+            <div class="item">
+                <img src="images/1.webp">
+                <div class="content">
+                    <div class="name">CoPilot / Black / Automatic</div>
+                    <div class="price">$550 / 1 product</div>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span class="value">3</span>
+                    <button>+</button>
+                </div>
+            </div>
+
+
         </div>
 
-        <button
-          class="navbar-toggler d-lg-none col-sm-2"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-    </header>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
+        <div class="total-price">
+            <h2>Total price</h2>
+            <h2><span id="price">0$</span></h2>
+        </div>
+
+        <div class="buttons">
+            <div style="background-color: red;" class="close">
+                CLOSE
+            </div>
+            <div style="background-color: #E8BC0E;" class="clear-cart" id="clear" onclick="clearCart()">
+                CLEAR CART
+            </div>
+            <div class="checkout">
+                <a href="cart-user-and checkout/viewUser/checkout.html">CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+    integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="cart-user-and checkout/servicesUser/productServUser.js"></script>
+
+    <script src="cart-user-and checkout/js-user/app.js"></script>
+    
+</body>
 </html>
