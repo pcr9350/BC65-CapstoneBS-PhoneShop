@@ -11,6 +11,22 @@ body {
   line-height: 1.43;
 }
 
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #a1a7b3;
+}
+
+a {
+  color: #f2f3f5;
+}
+a:hover, a:focus {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
 .myNavBar {
   border-bottom: 1px solid #cacbcc;
   margin: 0 auto;
@@ -73,6 +89,33 @@ body {
 .myNavBar .navbar-nav .nav-item:nth-child(3) {
   border-radius: 50%;
 }
+/* the header form form */
+.head-form {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+.head-form h2 {
+  font-size: 250%;
+  color: #3e403f;
+}
+
+.sp-thongbao {
+  color: #ec5252;
+  margin-left: 2px;
+  display: block;
+}
+
+#content {
+  width: 100%;
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.myCardHeader, .myCardFooter {
+  background-color: transparent;
+}
+
 .btn--white {
   color: #686f7a;
   background-color: #fff;
@@ -82,6 +125,8 @@ body {
 }
 .btn--white:hover {
   background-color: rgba(20, 23, 28, 0.05);
+  transform: translatey(3px);
+  box-shadow: none;
 }
 
 .btn--red {
@@ -93,4 +138,19 @@ body {
 }
 .btn--red:hover {
   background-color: red;
+  transform: translatey(3px);
+  box-shadow: none;
+}
+
+button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }/*# sourceMappingURL=main.css.map */

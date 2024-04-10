@@ -12,8 +12,11 @@ $bg-color-hover) {
     transition: all 0.5s;
     &:hover {
         background-color: $bg-color-hover;
+        transform: translatey(3px);
+        box-shadow: none;
     }
 }
+
 
 @mixin respond-to($breakpoint) {
     @if map-has-key($map: $breakpoints, $key: $breakpoint) {
