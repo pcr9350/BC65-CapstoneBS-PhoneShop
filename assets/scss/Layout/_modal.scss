@@ -1,0 +1,28 @@
+/* the header form form */
+.head-form {
+    margin: 2% auto 10% auto;
+    text-align: center;
+    h2 {
+        font-size: 250%;
+        color: $color-gray-6;
+    }
+
+}
+
+
+.sp-thongbao {
+    color: $color-red-0;
+    margin-left: 2px; 
+    display: block;
+}
+
+#content{
+    width: 100%;
+    background: $color-blue-1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-gray-7, $color-blue-1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color-gray-7, $color-blue-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.myCardHeader, .myCardFooter{
+    background-color: transparent;       
+}

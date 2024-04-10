@@ -10,3 +10,19 @@ body {
     background-color: $color-white-0;
     line-height: $line-height-0;
 }
+
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: $color-gray-2;
+}
+a {
+    color: $color-white-cream;
+    &:hover, &:focus {
+        color: $color-white-0;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    
+}
