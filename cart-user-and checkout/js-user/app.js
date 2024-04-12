@@ -56,7 +56,7 @@ function addDataToHTML() {
                 `<img src="${product.img}" alt="">
             <h2>${product.name}</h2>
             <div class="price">$${product.price}</div>
-            <button onclick="addCart(${product.id})">Add To Cart</button>`;
+            <button class="list__button" onclick="addCart(${product.id})">Add To Cart</button>`;
 
             listProductHTML.appendChild(newProduct);
 
@@ -115,9 +115,9 @@ function addCartToHTML() {
                         <div class="price">$${product.price} / 1 product</div>
                     </div>
                     <div class="quantity">
-                        <button onclick="changeQuantity(${product.id}, '-')">-</button>
-                        <span class="value">${product.quantity}</span>
-                        <button onclick="changeQuantity(${product.id}, '+')">+</button>
+                        <button class="btn btn--red" onclick="changeQuantity(${product.id}, '-')">-</button>
+                        <span class="value mx-2">${product.quantity}</span>
+                        <button class="btn btn--red" onclick="changeQuantity(${product.id}, '+')">+</button>
                     </div>`;
                 listCartHTML.appendChild(newCart);
                 totalQuantity = totalQuantity + product.quantity;
