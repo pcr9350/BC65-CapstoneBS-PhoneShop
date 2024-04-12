@@ -146,11 +146,6 @@ a:hover, a:focus {
   transform: translateX(20px);
 }
 
-.listProduct {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
 .listProduct .item {
   position: relative;
 }
