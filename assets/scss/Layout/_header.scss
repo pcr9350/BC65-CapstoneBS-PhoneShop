@@ -73,16 +73,23 @@
         }
         
     }
-    @include respond-to("extra-large") {
-        // .navbar-nav {
-        //     .business, .instructor {
-        //         display: none;
-        //     }
-        // }
-    }
-    @include respond-to("medium") {
-        // .input_search {
-        //     display: none;
-        // }
+    // @include respond-to("extra-large") {
+        
+    // }
+    // @include respond-to("medium") {
+        
+    // }
+    //responsive header
+    @include respond-to("small") {
+        .navbar-toggler {
+            width: 100%;
+        }
+        .nav-item {
+            button {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 }
+ 

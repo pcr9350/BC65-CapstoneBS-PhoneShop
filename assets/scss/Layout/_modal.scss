@@ -26,3 +26,46 @@
 .myCardHeader, .myCardFooter{
     background-color: transparent;       
 }
+//responsive List product trang admin
+.myCardHeader {
+    @include respond-to("medium") {
+        h3 {
+            font-size: $fs-2;
+        }
+    }
+    
+}
+.card-body {
+    @include respond-to("large") {
+        .myTable > thead > tr > th:nth-child(4) {
+            display: none;
+          }
+        .myTable > tbody > tr > td:nth-child(4) {
+            display: none;
+          }
+        .myTable > thead > tr > th:nth-child(5) {
+            display: none;
+          }
+        .myTable > tbody > tr > td:nth-child(5) {
+            display: none;
+          }
+        .myTable > thead > tr > th:nth-child(6) {
+            display: none;
+          }
+        .myTable > tbody > tr > td:nth-child(6) {
+            display: none;
+          }
+        .myTable > thead > tr > th:nth-child(8) {
+            display: none;
+          }
+        .myTable > tbody > tr > td:nth-child(8) {
+            display: none;
+          }
+        .myTable > thead > tr > th:nth-child(9) {
+            display: none;
+          }
+        .myTable > tbody > tr > td:nth-child(9) {
+            display: none;
+          }
+    }
+}
