@@ -52,7 +52,10 @@ function addDataToHTML() {
         products.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
-            newProduct.classList.add('col-3');
+            newProduct.classList.add('col-xl-3');
+            newProduct.classList.add('col-lg-4');
+            newProduct.classList.add('col-md-6');
+            newProduct.classList.add('col-12');
             newProduct.innerHTML =
                 `<img src="${product.img}" alt="">
             <h2>${product.name}</h2>

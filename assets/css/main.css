@@ -89,6 +89,16 @@ a:hover, a:focus {
 .myNavBar .navbar-nav .nav-item:nth-child(3) {
   border-radius: 50%;
 }
+@media screen and (max-width: 576px) {
+  .myNavBar .navbar-toggler {
+    width: 100%;
+  }
+  .myNavBar .nav-item button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* the header form form */
 .head-form {
   margin: 2% auto 10% auto;
@@ -114,6 +124,45 @@ a:hover, a:focus {
 
 .myCardHeader, .myCardFooter {
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .myCardHeader h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-body .myTable > thead > tr > th:nth-child(4) {
+    display: none;
+  }
+  .card-body .myTable > tbody > tr > td:nth-child(4) {
+    display: none;
+  }
+  .card-body .myTable > thead > tr > th:nth-child(5) {
+    display: none;
+  }
+  .card-body .myTable > tbody > tr > td:nth-child(5) {
+    display: none;
+  }
+  .card-body .myTable > thead > tr > th:nth-child(6) {
+    display: none;
+  }
+  .card-body .myTable > tbody > tr > td:nth-child(6) {
+    display: none;
+  }
+  .card-body .myTable > thead > tr > th:nth-child(8) {
+    display: none;
+  }
+  .card-body .myTable > tbody > tr > td:nth-child(8) {
+    display: none;
+  }
+  .card-body .myTable > thead > tr > th:nth-child(9) {
+    display: none;
+  }
+  .card-body .myTable > tbody > tr > td:nth-child(9) {
+    display: none;
+  }
 }
 
 #cartContainer {
@@ -144,6 +193,12 @@ a:hover, a:focus {
   align-items: center;
   border-radius: 50%;
   transform: translateX(20px);
+}
+
+@media screen and (max-width: 576px) {
+  #cartContainer .iconCart .totalQuantity {
+    transform: translateX(10px);
+  }
 }
 
 .listProduct .item {
@@ -271,6 +326,11 @@ a:hover, a:focus {
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   padding: 20px;
+}
+@media screen and (max-width: 992px) {
+  .checkoutLayout {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .checkoutLayout .right {
   background-color: #5358B3;

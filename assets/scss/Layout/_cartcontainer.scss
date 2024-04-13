@@ -27,7 +27,16 @@
         }
     }
 }
-
+//responsive cart
+#cartContainer {
+    .iconCart {
+        @include respond-to("small") {
+            .totalQuantity {
+                transform: translateX(10px);
+            }
+            } 
+    }
+} 
 .listProduct {
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -171,6 +180,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     padding: $pd-3;
+    //responsive checkoutLayout
+    @include respond-to('large') {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .right {
         background-color: $color-purple-1;
