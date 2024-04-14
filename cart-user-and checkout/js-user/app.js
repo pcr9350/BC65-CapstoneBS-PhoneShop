@@ -29,7 +29,7 @@ let products = null;
 
 function fetchDataFromAPI() {
     productServ.getProduct().then(function (response) {
-        console.log('response:', response.data)
+        // console.log('response:', response.data)
         products = response.data
         addDataToHTML()
 
