@@ -29,7 +29,7 @@ let products = null;
 
 function fetchDataFromAPI() {
     productServ.getProduct().then(function (response) {
-        console.log('response:', response.data)
+        // console.log('response:', response.data)
         products = response.data
         addDataToHTML()
 
@@ -57,7 +57,7 @@ function addDataToHTML() {
             newProduct.classList.add('col-md-6');
             newProduct.classList.add('col-12');
             newProduct.innerHTML =
-                `<img src="${product.img}" alt="">
+                `<img src="${product.img}" alt="" />
             <h2>${product.name}</h2>
             <div class="price">$${product.price}</div>
             <button class="list__button" onclick="addCart(${product.id})">Add To Cart</button>`;

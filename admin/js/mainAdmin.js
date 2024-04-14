@@ -1,7 +1,7 @@
 // fetch data lên bảng 
 function fetchProductList() {
     productServ.getProduct().then(function (response) {
-        console.log('response:', response.data)
+        // console.log('response:', response.data)
         renderProductList(response.data)
 
     }).catch(function (error) {
@@ -23,7 +23,7 @@ function resetForm() {
 function deleteProduct(id) {
     if (window.confirm('Bạn có muốn xóa sản phẩm này')) {
         productServ.deleteProductById(id).then(function (response) {
-            console.log('response:', response.data)
+            // console.log('response:', response.data)
             fetchProductList()
 
         }).catch(function (error) {
@@ -31,14 +31,14 @@ function deleteProduct(id) {
 
         })
     } else {
-        console.log('Người dùng đã hủy bỏ xóa sản phẩm')
+        window.alert('Người dùng đã hủy bỏ xóa sản phẩm')
     }
 }
 
 // thêm sản phẩm mới
 function addProduct() {
     var sp = getInfo()
-    console.log('sp:', sp)
+    // console.log('sp:', sp)
       // Kiểm tra dữ liệu đầu vào
     // 1. Kiểm tra Tên sản phẩm
     var isValid = kiemTraRong(sp.name, "#tbTenSP", "Tên sản phẩm không được để rỗng")
@@ -70,7 +70,7 @@ function addProduct() {
 
     if(isValid) {
         productServ.addNewProduct(sp).then(function(response){
-            console.log('response:', response)
+            // console.log('response:', response)
             $('#myModal').modal('hide');
             resetForm();
             fetchProductList()
@@ -86,7 +86,7 @@ function addProduct() {
 // edit sản phẩm lấy data sản phẩm show lên modal để edit
 function editProduct(id) {
     productServ.getProductById(id).then(function (response) {
-        console.log('response:', response.data)
+        // console.log('response:', response.data)
 
         var sp = response.data
         
@@ -114,7 +114,7 @@ function editProduct(id) {
 // update sản phẩm lại theo id 
 function updateProduct() {
     var sp = getInfo()
-    console.log('sp:', sp)
+    // console.log('sp:', sp)
 
     var id = document.querySelector('#MaSP').value
 
@@ -149,7 +149,7 @@ function updateProduct() {
 
     if(isValid) {
     productServ.updateProductById(id, sp).then(function (response) {
-        console.log('response:', response.data)
+        // console.log('response:', response.data)
         $('#myModal').modal('hide');
         resetForm();
         fetchProductList();
@@ -185,7 +185,7 @@ function searchProductByName() {
     var name = document.querySelector('#searchName').value.trim().toLowerCase();
 
     productServ.getProduct().then(function (response) {
-        console.log('response:', response.data)
+        // console.log('response:', response.data)
 
         var productList = response.data
 
